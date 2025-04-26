@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>College Fest</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .custom-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .custom-content {
+      text-align: center;
+      padding: 15px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>TechFest 2025</h1>
+  </div>
+
+  <div role="main" class="ui-content custom-content">
+    <img src="Techfest.jpg" alt="TechFest Banner" class="custom-img">
+    <p>Welcome to the official mobile portal for our College TechFest 2025! 🚀</p>
+    <p>Explore events, know more about us, and register to participate!</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+        <li><a href="#about" data-icon="info">About</a></li>
+        <li><a href="#register" data-icon="user">Register</a></li>
+      </ul>
+    </div>
+    <div style="text-align: center; font-size: 12px; padding-top: 5px;">
+        TechFest@2025
+      </div>
+  </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header">
+   
+    <h1>About TechFest</h1>
+  </div>
+
+  <div role="main" class="ui-content custom-content">
+    <p><strong>TechFest 2025</strong> is our annual inter-college technical festival featuring:</p>
+    <ul style="list-style-type: none;">
+      <li><i class="fa-solid fa-code"></i> Coding Competitions</li>
+      <li><i class="fa-solid fa-gamepad"></i> Gaming Tournaments</li>
+      <li><i class="fa-solid fa-robot"></i> Robotics Challenges</li>
+      <li><i class="fa-solid fa-microphone"></i> Guest Talks & Workshops</li>
+    </ul>
+    <p>Organized by the Department of Information Technology, KBTCOE College.</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home">Home</a></li>
+        <li><a href="#about" data-icon="info" class="ui-btn-active">About</a></li>
+        <li><a href="#register" data-icon="user">Register</a></li>
+      </ul>
+    </div>
+    <div style="text-align: center; font-size: 12px; padding-top: 5px;">
+        TechFest@2025
+      </div>
+  </div>
+</div>
+
+<!--  Register Page -->
+<div data-role="page" id="register">
+  <div data-role="header">
+    <h1>Register Now</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name">
+
+      <label for="email">Email ID:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email">
+
+      <label for="event">Select Event:</label>
+      <select name="event" id="event">
+        <option value="">--Choose Event--</option>
+        <option value="code">Code Hunt</option>
+        <option value="robotics">Robo Race</option>
+        <option value="quiz">Tech Quiz</option>
+        <option value="gaming">E-Sports</option>
+      </select>
+
+      <input type="submit" value="Submit" data-inline="true">
+    </form>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home">Home</a></li>
+        <li><a href="#about" data-icon="info">About</a></li>
+        <li><a href="#register" data-icon="user" class="ui-btn-active">Register</a></li>
+      </ul>
+    </div>
+    <div style="text-align: center; font-size: 12px; padding-top: 5px;">
+        TechFest@2025
+      </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
