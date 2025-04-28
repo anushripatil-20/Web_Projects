@@ -1,0 +1,25 @@
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form (ngSubmit)="register()">
+      <label>Name:</label>
+      <input type="text" name="name" [(ngModel)]="user.name" placeholder="Enter your name" required>
+  
+      <label>Email:</label>
+      <input type="email" name="email" [(ngModel)]="user.email" placeholder="Enter your email" required>
+  
+      <label>City:</label>
+      <input type="text" name="city" [(ngModel)]="user.city" placeholder="Enter your city" required>
+  
+      <label>Age:</label>
+      <input type="number" name="age" [(ngModel)]="user.age" placeholder="Enter your age" required>
+  
+      <label>Contact:</label>
+      <input type="text" name="contact" [(ngModel)]="user.contact" placeholder="Enter your contact" required>
+  
+      <label>Password:</label>
+      <input type="password" name="password" [(ngModel)]="user.password" placeholder="Enter your password" required>
+  
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  
